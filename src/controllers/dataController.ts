@@ -41,13 +41,15 @@ export const removeTodo = async (req: Request, res: Response) => {
 };
 
 export const updateTodo = async (req: Request, res: Response) => {
+  console.log(await User.findOne({ _id: req.user._id }, { "todoList.id": 1 }));
+  console.log(req.body.newTodo);
   try {
     const a = await User.updateOne(
       { _id: req.user._id, "todoList.id": req.body.todoId },
       { $set: { "todoList.$.todo": req.body.newTodo } }
     );
     if (a.modifiedCount === 0)
-      return res.status(404).json({ error: "Todo not found or same todo" });
+      return res.status(202).json({ alert: "Todo not found or same todo" });
   } catch (error) {
     return res.json(error);
   }

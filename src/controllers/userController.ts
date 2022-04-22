@@ -38,11 +38,16 @@ export const login = async (req: Request, res: Response) => {
   res.cookie("access-token", accessToken, {
     maxAge: 60 * 60 * 24 * 1000,
     httpOnly: true,
+    sameSite: "none",
+    secure: true,
   });
   return res.send("User Logged");
 };
 
 export const logout = async (req: Request, res: Response) => {
-  res.clearCookie("access-token");
+  res.clearCookie("access-token", {
+    sameSite: "none",
+    secure: true,
+  });
   return res.send("User Logged out").end();
 };
