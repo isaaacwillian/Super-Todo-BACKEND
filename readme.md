@@ -14,7 +14,7 @@ Essa é uma API Rest que provê toda a estrutura do banco de dados e da autentic
 
 ## 🚀 Tecnologias
 
-Esse projeto está sendo desenvolvido com as seguintes tecnologias:
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ✔️Node.js
 
