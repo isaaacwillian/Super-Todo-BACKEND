@@ -7,7 +7,9 @@ Essa é uma API Rest que provê toda a estrutura do banco de dados e da autentic
 ---
 
 <div align="center" >
-  <img src="../github/readme.gif" alt="super todo" height="425">
+  <img src="./github/readme1.gif" alt="demo-web" height="400">
+  <img src="./github/readme2.gif" alt="demo-web" height="400">
+  <img src="./github/readme3.gif" alt="demo-mobile" height="400">
 </div>
 
 ## 🚀 Tecnologias
@@ -26,7 +28,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ✔️Jsonwebtoken
 
-✔️Joi
+✔️Cors
 
 ✔️Yup
 
